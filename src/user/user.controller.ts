@@ -2,6 +2,8 @@ import { Controller, Get } from '@nestjs/common';
 
 @Controller('users')
 export class UserController {
-  @Get()
-  getMe() {}
+  @Get('me')
+  getMe() {
+    return 'user info';
+  }
 }
