@@ -2,9 +2,9 @@ import {
   Body,
   Controller,
   Post,
+  HttpCode,
+  HttpStatus,
 } from '@nestjs/common';
-import { HttpCode } from '@nestjs/common/decorators';
-import { HttpStatus } from '@nestjs/common/enums';
 import { AuthService } from './auth.service';
 import { AuthDto } from './dto';
 
